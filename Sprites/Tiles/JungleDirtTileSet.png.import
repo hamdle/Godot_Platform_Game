@@ -10,7 +10,7 @@ source_file="res://Sprites/Tiles/JungleDirtTileSet.png"
 source_md5="91b900562a5a8f6bd9be795aca8e9170"
 
 dest_files=[ "res://.import/JungleDirtTileSet.png-8de719a6cd5d0d1cc3206639bc4da3df.stex" ]
-dest_md5="43e78dc518364d43f253f49f9406dd42"
+dest_md5="7f006268ab7cf04838d5bbf25aafc4b8"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -28,5 +28,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0
