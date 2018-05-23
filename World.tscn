@@ -33,7 +33,7 @@ animations = [ {
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 32, 32 )
+extents = Vector2( 14, 28 )
 
 [node name="World" type="Node" index="0"]
 
@@ -57,7 +57,9 @@ playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" index="1"]
 
+position = Vector2( 0, 4 )
 shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
 
 [node name="TileMap" type="TileMap" parent="." index="1"]
 
