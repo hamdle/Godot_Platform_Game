@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="StreamTexture" id=1]
+
+flags = 0
+load_path = "res://.import/DirtAutoTile.png-37fd3fa35dbe398a629f83eb69626ffa.stex"
+
+[node name="DirtAutoTile" type="Sprite"]
+
+texture = SubResource( 1 )
+centered = false
+_sections_unfolded = [ "Offset", "Transform" ]
+
+
