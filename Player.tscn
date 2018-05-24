@@ -42,7 +42,7 @@ custom_solver_bias = 0.0
 radius = 14.0
 height = 28.0
 
-[node name="Player" type="KinematicBody2D"]
+[node name="Player" type="KinematicBody2D" index="0"]
 
 input_pickable = false
 collision_layer = 1
@@ -106,8 +106,16 @@ scroll_limit_end = Vector2( 0, 0 )
 scroll_ignore_camera_zoom = false
 _sections_unfolded = [ "Scroll" ]
 
-[node name="Sky" type="Sprite" parent="ParallaxBackground" index="0"]
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" index="0"]
 
+motion_scale = Vector2( 0.1, 0.1 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 640, 640 )
+_sections_unfolded = [ "Motion" ]
+
+[node name="Sky" type="Sprite" parent="ParallaxBackground/ParallaxLayer" index="0"]
+
+scale = Vector2( 1, 1 )
 texture = ExtResource( 11 )
 centered = false
 _sections_unfolded = [ "Offset", "Transform" ]
