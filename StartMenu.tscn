@@ -1,4 +1,6 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://StartMenu.gd" type="Script" id=1]
 
 [node name="StartMenu" type="Control" index="0"]
 
@@ -12,6 +14,7 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+script = ExtResource( 1 )
 _sections_unfolded = [ "Anchor", "Margin" ]
 
 [node name="CenterContainer" type="CenterContainer" parent="." index="0"]
@@ -112,5 +115,9 @@ group = null
 text = "Quit"
 flat = false
 align = 1
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/StartGameButton" to="." method="_on_StartGameButton_pressed"]
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/QuitGameButton" to="." method="_on_QuitGameButton_pressed"]
 
 
